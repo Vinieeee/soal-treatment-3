@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pasien</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>🏥 Rumah Sakit Sehat Sentosa</h2>
+
+        <div>
+            <a href="index.html">Pendaftaran</a>
+            <a href="data.html">Antrian Pasien</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Form Pendaftaran Pasien</h1>
+
+        <form id="formPasien">
+
+            <label>Nama Pasien</label>
+            <input type="text" id="nama">
+
+
+
+            <label>Jenis Kelamin</label>
+            <select id="jk">
+                <option value="">Pilih</option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+
+            <label>Keluhan</label>
+            <textarea id="keluhan" rows="4"></textarea>
+
+            <button type="submit">
+                Simpan Data
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

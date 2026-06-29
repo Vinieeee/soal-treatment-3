@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f8ff;
+}
+
+nav {
+    background: #198754;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #198754;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formPasien button{
+    width:100%;
+}
+
+button:hover {
+    background: #157347;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #198754;
+    color: white;
+}
+
+.kosong{
+    text-align:center;
+    padding:20px;
+    color:#666;
+    font-style:italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav div {
+        margin-top: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+}
