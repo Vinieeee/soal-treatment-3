@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Pasien</title>
+    <title>Data Pasien</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,39 +13,34 @@
 
     <nav>
         <h2>🏥 Rumah Sakit Sehat Sentosa</h2>
-
-        <div>
-            <a href="index.html">Pendaftaran</a>
-            <a href="data.html">Antrian Pasien</a>
-        </div>
     </nav>
 
     <div class="container">
 
-        <h1>Form Pendaftaran Pasien</h1>
+        <h1>Data Pasien</h1>
+        <div class="aksi-atas">
+            <a href="dataantrian.html" class="btn-tambah">+ Tambah Pasien</a>
+        </div>
+        <table>
 
-        <form id="formPasien">
+            <thead>
 
-            <label>Nama Pasien</label>
-            <input type="text" id="nama">
+                <tr>
+                    <th>No</th>
+                    <th>No. Antrian</th>
+                    <th>Nama Pasien</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Keluhan</th>
+                    <th>Aksi</th>
+                </tr>
 
+            </thead>
 
+            <tbody id="tableData">
 
-            <label>Jenis Kelamin</label>
-            <select id="jk">
-                <option value="">Pilih</option>
-                <option>Laki-laki</option>
-                <option>Perempuan</option>
-            </select>
+            </tbody>
 
-            <label>Keluhan</label>
-            <textarea id="keluhan" rows="4"></textarea>
-
-            <button type="submit">
-                Simpan Data
-            </button>
-
-        </form>
+        </table>
 
     </div>
 

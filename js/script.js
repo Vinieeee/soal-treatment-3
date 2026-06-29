@@ -37,14 +37,27 @@ if (form) {
                 keluhan
             };
 
-            data.push(pasien);
+            const editIndex = document.getElementById("editIndex").value;
+
+            if (editIndex === "") {
+
+                data.push(pasien);
+
+            } else {
+
+                pasien.antrian = data[editIndex].antrian;
+
+                data[editIndex] = pasien;
+
+                localStorage.removeItem("editIndex");
+
+            }
 
             localStorage.setItem("pasien", JSON.stringify(data));
 
             alert("Data berhasil disimpan!");
-
             form.reset();
-
+            window.location.href = "index.html";
         } catch (error) {
             alert(error.message);
         }
@@ -90,9 +103,51 @@ function tampilkanData() {
                 <td>${pasien.nama}</td>
                 <td>${pasien.jk}</td>
                 <td>${pasien.keluhan}</td>
+                <td>
+                    <button class="edit" onclick="editData(${index})">Edit</button>
+                    <button class="hapus" onclick="hapusData(${index})">Hapus</button>
+                </td>
             </tr>
         `;
 
     });
+
+}
+
+function editData(index) {
+
+    localStorage.setItem("editIndex", index);
+
+    window.location.href = "dataantrian.html";
+
+}
+
+function hapusData(index) {
+
+    let data = JSON.parse(localStorage.getItem("pasien")) || [];
+
+    if (confirm("Yakin ingin menghapus data ini?")) {
+
+        data.splice(index, 1);
+
+        localStorage.setItem("pasien", JSON.stringify(data));
+
+        tampilkanData();
+
+    }
+
+}
+
+const editIndex = localStorage.getItem("editIndex");
+
+if (editIndex !== null) {
+
+    let data = JSON.parse(localStorage.getItem("pasien")) || [];
+
+    document.getElementById("nama").value = data[editIndex].nama;
+    document.getElementById("jk").value = data[editIndex].jk;
+    document.getElementById("keluhan").value = data[editIndex].keluhan;
+
+    document.getElementById("editIndex").value = editIndex;
 
 }
