@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    background: #00c3ff;
+    background: #0066ff;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ nav a {
 
 h1 {
     margin-bottom: 20px;
-    color: #198754;
+    color: #0088ff;
 }
 
 label {
@@ -88,7 +88,7 @@ td {
 }
 
 th {
-    background: #198754;
+    background: #009dff;
     color: white;
 }
 
@@ -100,9 +100,9 @@ th {
 }
 
 .edit{
-    background:#ffc107;
-    color:black;
-    border:none;
+    background: none;
+    color:rgb(0, 255, 42);
+    border:2px solid rgb(0, 255, 42);
     padding:8px 12px;
     border-radius:5px;
     cursor:pointer;
@@ -110,20 +110,22 @@ th {
 }
 
 .edit:hover{
-    background:#e0a800;
+    color: white;
+    background:rgb(0, 255, 42);
 }
 
 .hapus{
-    background:#dc3545;
-    color:white;
-    border:none;
+    background: none;
+    border: 2px solid #ff0019;
+    color:rgb(255, 0, 0);
     padding:8px 12px;
     border-radius:5px;
     cursor:pointer;
 }
 
 .hapus:hover{
-    background:#bb2d3b;
+    color: white;
+    background:#ff0019;
 }
 
 .aksi-atas{
