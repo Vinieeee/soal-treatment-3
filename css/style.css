@@ -37,7 +37,7 @@ nav a {
 
 h1 {
     margin-bottom: 20px;
-    color: #0088ff;
+    color: #0066ff;
 }
 
 label {
@@ -88,7 +88,7 @@ td {
 }
 
 th {
-    background: #009dff;
+    background: #0066ff;
     color: white;
 }
 
@@ -136,8 +136,9 @@ th {
 
 .btn-tambah{
     display: inline-block;
-    background: rgb(0, 153, 255);
-    color: white;
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.898);
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 5px;
@@ -146,7 +147,8 @@ th {
 }
 
 .btn-tambah:hover{
-    background: #157347;
+    background: #ff7b00;
+    color: black;
 }
 
 
