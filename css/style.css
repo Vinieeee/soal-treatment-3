@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    background: #198754;
+    background: #00c3ff;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -134,7 +134,7 @@ th {
 
 .btn-tambah{
     display: inline-block;
-    background: #198754;
+    background: rgb(0, 153, 255);
     color: white;
     text-decoration: none;
     padding: 10px 18px;
