@@ -152,7 +152,96 @@ th {
 }
 
 
+/* ===========================
+   HALAMAN BERANDA
+=========================== */
 
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+    background:linear-gradient(rgba(0,102,255,.7),rgba(0,102,255,.7)),
+    url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:30px;
+}
+
+.hero-content{
+    max-width:700px;
+    background:rgba(255,255,255,.95);
+    padding:45px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.hero-content h1{
+    color:#0066ff;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-button{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-home{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.daftar{
+    background:#198754;
+}
+
+.daftar:hover{
+    background:#157347;
+}
+
+.data{
+    background:#0066ff;
+}
+
+.data:hover{
+    background:#0050d4;
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-button{
+        flex-direction:column;
+    }
+
+    .btn-home{
+        width:100%;
+    }
+
+}
 
 
 
