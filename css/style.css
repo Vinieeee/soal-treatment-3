@@ -5,24 +5,35 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background: #f2f8ff;
+body{
+    background-color: white;
 }
 
-nav {
+
+.beranda {
+    min-height:100vh;
+    background:linear-gradient(rgba(0,102,255,.7),rgba(0,102,255,.7)),
+    url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.nav-links {
     background: #0066ff;
     color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    justify-content: space-between;
 }
+
 
 nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    justify-content: end;
 }
 
 .container {
@@ -160,11 +171,6 @@ th {
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:85vh;
-    background:linear-gradient(rgba(0,102,255,.7),rgba(0,102,255,.7)),
-    url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
     text-align:center;
     padding:30px;
 }

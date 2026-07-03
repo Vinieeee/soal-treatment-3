@@ -4,53 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Pasien</title>
-
+    <title>Rumah Sakit Sehat Sentosa</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-
-    <nav class="nav-links">
+<body class="beranda">
+    <div class="nav-links">
         <h2>🏥 Rumah Sakit Sehat Sentosa</h2>
-        <a href="beranda.html">Beranda</a>
-        <a href="dataantrian.html">Daftar Pasien</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="index.html">Data Pasien</a>
-    </nav>
-
-
-    <div class="container">
-
-        <h1>Data Pasien</h1>
-        <div class="aksi-atas">
-            <a href="dataantrian.html" class="btn-tambah">+ Tambah Pasien</a>
-        </div>
-        <table>
-
-            <thead>
-
-                <tr>
-                    <th>No</th>
-                    <th>No. Antrian</th>
-                    <th>Nama Pasien</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Keluhan</th>
-                    <th>Aksi</th>
-                </tr>
-
-            </thead>
-
-            <tbody id="tableData">
-
-            </tbody>
-
-        </table>
-
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="form.html">Daftar</a>
+            <a href="tabel.html">Data</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
     </div>
 
-    <script src="js/script.js"></script>
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <h1>Selamat Datang</h1>
+
+            <p>
+                Sistem Pendaftaran Pasien Rumah Sakit Sehat Sentosa memudahkan
+                proses pendaftaran pasien, pengelolaan data pasien, serta
+                pemantauan nomor antrian secara cepat dan efisien.
+            </p>
+
+            <div class="hero-button">
+                <a href="form.html" class="btn-home daftar">
+                    Daftar Pasien
+                </a>
+
+                <a href="tabel.html" class="btn-home data">
+                    Lihat Data Pasien
+                </a>
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 
